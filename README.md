@@ -6,7 +6,12 @@
 
 計算 Ackermann 函數 $ A(m, n) $，定義為：
 
-![alt text](image.png)
+$$A(m, n) = 
+\begin{cases} 
+n + 1 & \text{if } m = 0 \\
+A(m - 1, 1) & \text{if } m > 0 \text{ and } n = 0 \\
+A(m - 1, A(m, n - 1)) & \text{otherwise}
+\end{cases}$$
 
 #### 解題策略
 
